@@ -1,9 +1,19 @@
 /* Default styles for the browser */
+html{
+    height: 100%;
+}
 *{
     margin: 0;
     padding: 0;
     list-style: none;
     text-decoration: none;
+    font-family:'Montserrat';
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
 }
 
 header{
@@ -15,7 +25,7 @@ header{
     color: aliceblue;
 }
 
-header .inner{
+header .inner-header{
     width: 90%; 
     height: 100%;
     display: block;
@@ -75,8 +85,39 @@ header nav .button:hover{
 }
 
 .img-road{
-    width: 1300px;
-    height: 1300px;
-    background-image: url(assets\images\karsten-wurth-rafblRbne3o-unsplash.jpg);
+    width: 100%;
+    height: 90vh;
+    background-image: url("./../images/karsten-wurth-rafblRbne3o-unsplash.jpg");
     background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
 }
+
+.main{
+    color: aliceblue;
+    background-color: #101010;
+    padding: 15%;
+    margin: 5%;
+    text-align:left;
+}
+
+footer{
+    width: 100vw;
+    display: block;
+    overflow: hidden;
+    padding: 70px 0;
+    box-sizing: border-box;
+    background-color: #101010;
+    margin-top: auto;
+}
+
+.inner-footer{
+    display: block;
+    margin: 0 auto;
+    width: 110px;
+    height: 100%;
+}
+
+
+    
