@@ -4,38 +4,22 @@
 
 # Screen Shots
 <header>
-
-        <div class="avatar">
-    
-       
-        </div>
-        <div class="inner-header">
-
-            <img src="./assets/images/avataaars.png" alt="avatar-img">
-            
-
-            <div class="name">
-                <div>
-                    <h1>BRYAN BOHLING</h1>
-                </div>
+    <div class="avatar">
+    </div>
+    <div class="inner-header">
+        <img src="./assets/images/avataaars.png" alt="avatar-img">
+        <div class="name">
+            <div>
+                <h1>BRYAN BOHLING</h1>
             </div>
-
-            <nav>
-            
-                <li><span><a href="#about-me">About Me</a></span></li>
-
-                <li><span><a href="#projects">Projects</a></span></li>
-                
-                <li><span><a href="#contact-me" class="button">Contact Me</a></span></li>
-                
-            </nav>
-            
-
         </div>
-            
-       
-    </header>
-
+        <nav>
+            <li><span><a href="#about-me">About Me</a></span></li>
+            <li><span><a href="#projects">Projects</a></span></li>
+            <li><span><a href="#contact-me" class="button">Contact Me</a></span></li>   
+        </nav>
+    </div>  
+</header>
 
 
     https://www.awesomescreenshot.com/image/34084330?key=a184611fc60cefe211ef5dafbf37f881
