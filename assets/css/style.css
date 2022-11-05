@@ -8,6 +8,7 @@ html{
     list-style: none;
     text-decoration: none;
     font-family:'Montserrat';
+    /* border: solid 5px black; */
 }
 
 body{
@@ -19,6 +20,7 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    min-width: auto;
 }
 
 header{
@@ -29,6 +31,7 @@ header{
     background-color: #101010;
     color: aliceblue;
     margin: 0 auto;
+    
 }
 
 
@@ -37,7 +40,7 @@ header .inner-header{
     height: 100%;
     display: block;
     margin: 0 auto;
-    
+    /* background-color: red; */
     
 }
 
@@ -59,8 +62,13 @@ header .name div{
     height: 100%;
     display: table-cell;
     vertical-align: middle;
-    font-weight: 1000;
+    font-weight: 1000;   
 
+}
+
+header .name div h1{
+    border-bottom: 2px solid aliceblue;
+    
 }
 
 header nav{
@@ -101,33 +109,26 @@ header nav .button:hover{
     
 }
 
-aside{
+  
+main{
     display: flex;
+    align-items: center;
     flex-direction: column;
-    
-    
-
-}  
-
-aside ul{
-    margin-top:100px;
-    margin-left: 15%;
-    margin-right:500px;
-    font-size: 75px;
-    
 }
 
+
 .p1{
-    background-image: url("../images/pexels-hasan-albari-1229861.jpg");
+    background-image: url("../images/steven-weeks-OunfEeWYGmw-unsplash.jpg");
     background-repeat: no-repeat;
     background-attachment:local;
-    background-size: cover; 
+    object-fit: contain;
     background-position: center;
-    height: 700px;
+    min-height: 50rem;
+    min-width: 75rem;
     color:#101010;
     border:solid 5px;
     border-color:#101010;
-    margin: 200px 400px;
+    margin: 5rem;
     
 
     
@@ -136,7 +137,7 @@ aside ul{
     
 }
 
-.p1 ul{
+.p1 h3{
     font-weight: 1000;
     font-size: 30px;
     margin-bottom: 20px;
@@ -146,81 +147,88 @@ aside ul{
     border:solid #101010 2px;  
 }
 
+.p1 h3 a{
+    color: aliceblue;
+}
+
 
 .p2{
-    background-image: url("../images/sebastian-garcia-o8SzLhKUEBU-unsplash.jpg");
+    background-image: url("../images/towfiqu-barbhuiya-FnA5pAzqhMM-unsplash.jpg");
     background-repeat: no-repeat;
     background-attachment:local;
-    background-size: cover; 
+    object-fit: contain;
     background-position: center;
-    height: 700px;
+    min-height: 25rem;
+    min-width: 40rem;
     color:#101010;
     border:solid 5px;
     border-color:#101010;
-    margin: 200px 400px;
-    /* color:#101010;
-    border:solid 5px;
-    border-color:#101010;
-    margin: 140px 90px;
-    padding:0;
-    margin-left: 300px; */
+    margin: 5rem;
 }    
 
-.p2 ul{
+.p2 h3{
     font-weight: 1000;
     font-size: 30px;
     margin-bottom: 20px;
     margin-right: 75%;
     background-color: #101010;
     color: aliceblue;
-    border:solid #101010 2px;
+    border:solid #101010 2px;  
 }
 
 .p3{
-    background-image: url("../images/mohamed-nohassi-odxB5oIG_iA-unsplash.jpg");
+    background-image: url("../images/dulcey-lima-MSoR2O91lY0-unsplash.jpg");
     background-repeat: no-repeat;
     background-attachment:local;
-    background-size: cover; 
+    object-fit: contain;
     background-position: center;
-    height: 700px;
+    min-height: 20rem;
+    min-width: 30rem;
     color:#101010;
     border:solid 5px;
     border-color:#101010;
-    margin: 200px 400px;
-    /* color:#101010;
-    border:solid 5px;
-    border-color:#101010;
-    margin: 140px 90px;
-    padding:0;
-    margin-right: 300px; */
+    margin: 5rem;
 } 
 
-.p3 ul{
+.p3 h3{
     font-weight: 1000;
     font-size: 30px;
     margin-bottom: 20px;
     margin-right: 75%;
     background-color: #101010;
     color: aliceblue;
-    border:solid #101010 2px;
+    border:solid #101010 2px;  
 }
 
 footer{
-    width: 100vw;
-    display: block;
+    width: 100%;
     overflow: hidden;
     padding: 70px 0;
     box-sizing: border-box;
     background-color: #101010;
+    margin: 0 auto;
     margin-top: auto;
 }
 
 .inner-footer{
-    display: block;
+    display: flex;
+    row-gap: 10px;
+    justify-content: center;
     margin: 0 auto;
-    width: 110px;
+    width: 90%;
     height: 100%;
+    
 }
+
+
+
+footer h2 a{
+    
+    color: aliceblue;
+    
+}
+
+
 
 
 /* Tablets */
@@ -236,15 +244,44 @@ footer{
     }
 
     header nav .button{
-        background-color:unset; /* This HEX is the color of the button */
+        background-color:unset;
       
     }
-        
+
+    .p1{
+        min-width: 35rem;
+        min-height: 35rem;
+
+    }   
+    
+    .p2{
+        min-width: 35rem;
+        min-height: 25rem;
+
+    } 
+    
+ 
 }
    
 
 /* Large smartphones*/
 @media screen and (max-width: 768px) {
+    .p1{
+        min-width: 25rem;
+        min-height: 25rem;
+    }
+
+    .p2{
+        min-width: 25rem;
+        min-height: 25rem;
+
+    }
+    
+    .p3{
+        min-width: 25rem;
+        min-height: 25rem;
+
+    }   
 
 }
     
@@ -252,7 +289,23 @@ footer{
  
 /* Small smartphones  */
  @media screen and (max-width: 576px) {
-   
+    .p1{
+        min-width: 15rem;
+        min-height: 15rem;
+    }
+
+    .p2{
+        min-width: 15rem;
+        min-height: 15rem;
+
+    }   
+
+    .p3{
+        min-width: 15rem;
+        min-height: 15rem;
+
+    }   
+ 
  }
     
     
