@@ -236,7 +236,22 @@ footer h2 a{
     
 }
 
+.p2-2{
+    background-image: url("../images/mainbackground.jpg");
+    background-repeat: no-repeat;
+    background-attachment:local;
+    background-position: center;
+    min-height: 44rem;
+    min-width: 30rem;
+    color:#101010;
+    border:solid 5px;
+    border-color:#101010;
+    margin: 5rem;
+}
 
+.p2-2 h3 a{
+    color: aliceblue;
+}
 
 
 /* Tablets */
